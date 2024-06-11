@@ -1,0 +1,23 @@
+@use '../base/colores' as c;
+@use "../base/mixins" as m;
+.nav-bar{
+  //padding-top: 1rem;
+  @include m.telefono{
+    display: flex;
+    flex-direction: row;
+  }
+  @include m.tablet{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  gap: 1rem;
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    //falta mixin
+    @include m.hoverP
+  }
+}

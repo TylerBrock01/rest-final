@@ -1,0 +1,35 @@
+@use 'colores' as c;
+@use "variables" as v;
+@mixin pistache{
+  border: 2px solid c.$pistache;
+  color: c.$pistache;
+}
+@mixin hoverP{
+  &:hover{
+    @include pistache;
+    .icon{
+      stroke: c.$pistache;
+    }
+    transition: .3s ease;
+  }
+}
+@mixin telefono{
+  @media (min-width:v.$telefono ){
+    @content;
+  }
+}
+@mixin tablet{
+  @media (min-width:v.$tablet ){
+    @content;
+  }
+}
+@mixin desktop{
+  @media (min-width:v.$desktop ){
+    @content;
+  }
+}
+@mixin desktopXL{
+  @media (min-width:v.$desktopXL ){
+    @content;
+  }
+}

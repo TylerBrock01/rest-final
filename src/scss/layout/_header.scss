@@ -1,0 +1,16 @@
+@use '../base/colores' as c;
+@use '../base/mixins' as m;
+.header{
+  h1{
+    color: c.$purpura;
+    font-size: 4rem;
+    text-align: center;
+  }
+  h2{
+    color: c.$blanco;
+    text-align: start;
+    padding: 1rem;
+  border: 2px solid c.$rojo;
+  }
+  text-transform: capitalize;
+}
