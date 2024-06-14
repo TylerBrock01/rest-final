@@ -33,18 +33,3 @@
     @content;
   }
 }
-@mixin radiant{
-  .icon{
-    background: linear-gradient(
-                    279deg,
-                    rgba(c.$amarillo, 0%),
-                    rgba(c.$purpura, 50%)
-    );
-  }
-}
-@mixin color{
-  background:
-          linear-gradient(90deg,
-          rgba(c.$negro, 1) 0%,
-          rgba(c.$rojofondo,1) 30%);
-}

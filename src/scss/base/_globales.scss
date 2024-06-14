@@ -1,6 +1,8 @@
 @use 'variables' as v;
 @use 'colores' as c;
 @use "mixins" as m;
+@use 'variables' as v;
+//default
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -12,16 +14,14 @@ html {
   box-sizing: inherit;
 }
 body {
-
-@include m.color;
   font-family: v.$fuente_principal;
   font-optical-sizing: auto;
   font-style: normal;
-  color: c.$rojo;
+  color: c.$blanco;
   font-size: 2rem;
 }
 p {
-  color: c.$rojo;
+  color: c.$blanco;
   line-height: 1.5;
 }
 .contenedor {
@@ -30,20 +30,21 @@ p {
   margin: 0 auto;
 }
 a {
-  font-size: 5rem;
-  color: c.$rojo;
   text-decoration: none;
-  text-transform: capitalize;
+}
+h1, h2, h3 {
+  margin: 0 0 5rem 0;
+  font-weight: 900;
 }
 h1 {
-  margin: 2rem 0 3rem 0;
-  font-size: 8rem;
+  font-size: 4rem;
 }
 h2 {
-  font-size: 6rem;
+  font-size: 4.6rem;
 }
 h3 {
-  font-size: 5rem;
+  font-size: 6rem;
+  text-align: center;
 }
 img {
   max-width: 100%;
@@ -54,13 +55,4 @@ img {
 body > section {
   padding: 10rem 0
 }
-.centrar-contenido{
-  text-align: center;
-}
-.box-pistache{
-  @include m.pistache;
-}
-.box-rojo{
-  border: 2px solid c.$rojo;
-  color: c.$blanco;
-}
+//end default
