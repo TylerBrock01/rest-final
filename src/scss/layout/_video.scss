@@ -1,0 +1,13 @@
+@use "../base/colores" as c;
+.video{
+  position: relative;
+  .overlay{
+    position: absolute;
+    background: linear-gradient(
+    279deg,
+    rgba(c.$rojo, 60%),
+    rgba(c.$purpura, 90%)
+    );
+    inset: 0;
+  }
+}

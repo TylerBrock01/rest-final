@@ -12,7 +12,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: black;
+
+@include m.color;
   font-family: v.$fuente_principal;
   font-optical-sizing: auto;
   font-style: normal;
@@ -64,5 +65,4 @@ body > section {
 .box-rojo{
   border: 2px solid c.$rojo;
   color: c.$blanco;
-  background-color: black;
 }
