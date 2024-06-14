@@ -19,8 +19,7 @@
     @include m.desktop{
       height: 30rem;
     }
-    height: auto;
-    width: auto;
+    padding: 5rem;
     @include m.hoverP;
     .icon{
       @include m.desktop{
@@ -28,8 +27,8 @@
         width: 8rem;
         stroke-width: 1;
       }
-      height: auto;
-      width: auto;
+      height: 10rem;
+      width: 10rem;
     }
   }
 }
