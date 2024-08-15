@@ -371,4 +371,6 @@ body > section {
   padding: 10rem 0;
 }
 
-/*# sourceMappingURL=app.css.map */
+.header {
+  background-color: rgb(110, 3, 140);
+}
