@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.requisitos v8.0.1 | MIT License | github.com/necolas/normalize.requisitos */
 /* Document
    ========================================================================== */
 /**
@@ -372,5 +372,10 @@ body > section {
 }
 
 .header {
-  background-color: rgb(110, 3, 140);
+  background-color: #F2163E;
+  text-transform: capitalize;
+}
+
+.titulo {
+  color: rgb(110, 3, 140);
 }
